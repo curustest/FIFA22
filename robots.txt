@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://curustest.github.io/FIFA22/sitemap.xml
