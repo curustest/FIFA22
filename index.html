@@ -18,11 +18,14 @@
 <link rel="icon" type="image/webp" href="https://curustest.github.io/FIFA22/assets/logo-fifa22.webp">
 <link rel="apple-touch-icon" href="https://curustest.github.io/FIFA22/assets/logo-fifa22.webp">
 
+
 <meta property="og:locale" content="id_ID">
 <meta property="og:type" content="website">
 <meta property="og:title" content="FIFA22 || Mari Semarakkan Permainan Global Dunia Euphoria Dengan Sensasi Game Epic Di FIFA22">
 <meta property="og:description" content="Rasakan sensasi game epic di FIFA22 dengan pengalaman bermain yang penuh euphoria. Jelajahi dunia permainan global yang semakin seru dan menghibur di FIFA22.">
 <meta property="og:image" content="https://curustest.github.io/FIFA22/assets/banner-fifa22.webp">
+<meta property="og:image" content="https://curustest.github.io/FIFA22/assets/banner-fifa22.webp">
+<meta property="og:image:alt" content="Logo dan Banner FIFA22">
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -37,6 +40,14 @@
       "name": "FIFA22",
       "description": "Platform permainan global modern dengan sensasi game epic dan pengalaman euphoria yang interaktif.",
       "inLanguage": "id-ID"
+      "publisher":{
+ "@type":"Organization",
+ "name":"FIFA22",
+ "logo":{
+   "@type":"ImageObject",
+   "url":"https://curustest.github.io/FIFA22/assets/logo-fifa22.webp"
+ }
+}
     },
     {
       "@type": "WebPage",
@@ -156,6 +167,13 @@ font-weight:800;
 letter-spacing:-1px;
 }
 
+@media(max-width:480px){
+
+.logo amp-img{
+max-width:140px;
+}
+
+}
 .nav-menu{
 display:flex;
 align-items:center;
@@ -209,16 +227,23 @@ position:relative;
 }
 
 .reviewer-name{
-font-size:15px;
-font-weight:700;
+font-size:16px;
+font-weight:800;
 color:#fff;
-line-height:1.8;
+line-height:1.6;
+letter-spacing:.3px;
+}
+
+.reviewer-name:before{
+content:"👤 ";
+opacity:.8;
 }
 
 .review-comment{
 font-size:14px;
-line-height:1.8;
-color:var(--muted);
+line-height:1.9;
+color:#cbd5e1;
+font-style:italic;
 }
 
 /* REVISI RESPONSIVE BANNER AMP */
@@ -309,19 +334,40 @@ flex-direction: column;
 gap: 14px;
 }
 
-.faq-sidebar-item {
-background: var(--card2);
-border: 1px solid rgba(255,255,255,.04);
-border-radius: 14px;
-padding: 14px;
+.faq-sidebar-item{
+background:linear-gradient(
+180deg,
+rgba(139,92,246,.06),
+rgba(19,23,34,1)
+);
+border:1px solid rgba(139,92,246,.15);
+border-radius:18px;
+padding:18px;
+transition:.3s ease;
+cursor:pointer;
 }
 
-.faq-sidebar-item h3 {
-font-size: 13px;
-font-weight: 700;
-color: #fff;
-margin-bottom: 6px;
-line-height: 1.4;
+.faq-sidebar-item:hover{
+transform:translateX(6px);
+border-color:rgba(139,92,246,.45);
+box-shadow:
+0 0 20px rgba(139,92,246,.15);
+}
+
+.faq-sidebar-item h3{
+font-size:14px;
+font-weight:800;
+color:#fff;
+display:flex;
+align-items:center;
+gap:8px;
+margin-bottom:10px;
+}
+
+.faq-sidebar-item h3:before{
+content:"✦";
+color:#8b5cf6;
+font-size:16px;
 }
 
 .faq-sidebar-item p {
@@ -337,6 +383,14 @@ margin:60px 0 24px;
 .section-head h2{
 font-size:30px;
 letter-spacing:-1px;
+font-weight:800;
+background:linear-gradient(
+90deg,
+#ffffff,
+#8b5cf6
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .article-grid{
@@ -346,15 +400,37 @@ gap:20px;
 }
 
 .article-card{
-background:var(--card);
-border:1px solid var(--line);
+position:relative;
+background:linear-gradient(
+180deg,
+rgba(139,92,246,.08),
+rgba(15,17,23,1)
+);
+border:1px solid rgba(139,92,246,.18);
 border-radius:24px;
-overflow:hidden;
-transition:.25s;
-padding:24px;
+padding:28px;
 display:flex;
 flex-direction:column;
 gap:16px;
+transition:.35s ease;
+overflow:hidden;
+}
+
+.article-card:hover{
+transform:translateY(-6px);
+border-color:rgba(139,92,246,.45);
+box-shadow:
+0 0 25px rgba(139,92,246,.18),
+0 0 60px rgba(139,92,246,.08);
+}
+
+.article-card:before{
+content:"★★★★★";
+font-size:12px;
+letter-spacing:3px;
+color:#fbbf24;
+display:block;
+margin-bottom:8px;
 }
 
 .seo-box{
@@ -478,15 +554,12 @@ alt="Logo FIFA22">
 <a href="https://curustest.github.io/FIFA22/">FIFA22 EUPHORIA</a>
 <a href="https://curustest.github.io/FIFA22/">FIFA22 EPIC</a>
 </nav>
-<a href="https://fifa22-games.pages.dev" class="header-btn">Live Chat</a>
-</div>
-</header>
 
 <main class="container">
 <section class="hero-layout">
 <div class="hero-main">
 <div class="hero-banner">
-<amp-img src="https://curustest.github.io/FIFA22/assets/banner-fifa22.webp" width="1920" height="1080" layout="responsive" alt="Banner"></amp-img>
+<amp-img src="https://curustest.github.io/FIFA22/assets/banner-fifa22.webp" width="1920" height="1080" layout="responsive" alt="FIFA22 Futuristic Gaming Platform"></amp-img>
 </div>
 <div class="hero-content">
 <h1>FIFA22 || Mari Semarakkan Permainan Global Dunia Euphoria Dengan Sensasi Game Epic Di FIFA22</h1>
@@ -505,7 +578,6 @@ alt="Logo FIFA22">
 <div class="panel-title">INFO FIFA22</div>
 <div class="stats-item"><span>Minimal Deposit</span><strong>IDR 20.000</strong></div>
 <div class="stats-item"><span>Minimal Withdraw</span><strong>IDR 50.000</strong></div>
-<div class="stats-item"><span>Live Chat</span><strong>24/7</strong></div>
 </div>
 
 <div class="panel-box">
@@ -546,32 +618,32 @@ alt="Logo FIFA22">
   
   <div class="article-grid">
     <div class="article-card">
-      <div class="reviewer-name">Rizky Prasetyo (26 Tahun) ★★★★★</div>
+      <div class="reviewer-name">Rizky Prasetyo (26 Tahun)</div>
       <p class="review-comment">"Awalnya cuma iseng lihat-lihat, ternyata FIFA22 punya suasana yang beda. Tampilan modernnya bikin nyaman, dan semua fitur terasa gampang dipahami bahkan buat pengguna baru."</p>
     </div>
 
     <div class="article-card">
-      <div class="reviewer-name">Andi Saputra (29 Tahun) ★★★★★</div>
+      <div class="reviewer-name">Andi Saputra (29 Tahun)</div>
       <p class="review-comment">"Yang paling berkesan buat saya adalah atmosfernya. FIFA22 punya nuansa yang seru dan hidup, jadi setiap kali masuk rasanya seperti menemukan hiburan baru yang nggak membosankan."</p>
     </div>
 
     <div class="article-card">
-      <div class="reviewer-name">Kevin Tampubolon (24 Tahun) ★★★★★</div>
+      <div class="reviewer-name">Kevin Tampubolon (24 Tahun)</div>
       <p class="review-comment">"FIFA22 cocok buat yang suka dunia digital modern. Navigasinya simpel, tampilannya bersih, dan pengalaman yang diberikan terasa ringan tapi tetap premium."</p>
     </div>
 
     <div class="article-card">
-      <div class="reviewer-name">Reza Maulana (31 Tahun) ★★★★★</div>
+      <div class="reviewer-name">Reza Maulana (31 Tahun)</div>
       <p class="review-comment">"Jarang ada platform yang bisa menghadirkan kesan global seperti FIFA22. Dari desain sampai pengalaman pengguna, semuanya terasa lebih rapi dan profesional."</p>
     </div>
 
     <div class="article-card">
-      <div class="reviewer-name">Fajar Hidayat (27 Tahun) ★★★★★</div>
+      <div class="reviewer-name">Fajar Hidayat (27 Tahun)</div>
       <p class="review-comment">"Menurut saya FIFA22 punya energi yang positif. Setiap kunjungan terasa santai, nyaman, dan bikin betah untuk menjelajahi berbagai pengalaman yang tersedia."</p>
     </div>
 
     <div class="article-card">
-      <div class="reviewer-name">Kevin Fernando (25 Tahun) ★★★★★</div>
+      <div class="reviewer-name">Kevin Fernando (25 Tahun)</div>
       <p class="review-comment">"Kalau bicara soal game epic dan suasana euphoria, FIFA22 berhasil menghadirkan keduanya dalam satu tempat. Modern, cepat, dan enak digunakan kapan saja."</p>
     </div>
   </div>
